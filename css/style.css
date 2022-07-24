@@ -7,8 +7,119 @@
 
 html {
     scroll-behavior: smooth;
+    
 }
 
 #index {
+    background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url("../images/mosaico1.png");
+    background-size: 6em 6em;
+}
 
+#index .container header {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+
+#index .container header .container-header {
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#index .container header .container-header h1{
+    text-align: center;
+    color: rgb(153, 51, 204);
+}
+
+#index .container header .container-header nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#index .container header .container-header nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 0 15px;
+    font-weight: 400;
+    transition: 0.2s;
+}
+
+#index .container header .container-header nav ul a:hover{
+    color: rgb(0, 204, 0);
+}
+
+#index .container header .container-header .icon-social a{
+    text-decoration: none;
+    color: rgb(153, 51, 204);
+    display: inline-block;
+    margin-left: 10px;
+    transition: 0.4s;
+}
+
+#index .container header .container-header .icon-social a:hover{
+    color: rgb(0, 204, 0);
+}
+
+#index .container .presentation{
+    max-width: 1024px;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#index .container .presentation .welcome {
+    font-size: 30px;
+    margin-bottom: 20px;
+    letter-spacing: 20px;
+}
+
+#index .container .presentation h2{
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#index .container .presentation h2 span{
+    color: rgb(153, 51, 204);
+    text-decoration: underline;
+}
+
+#index .container .presentation .description {
+    max-width: 512px;
+    margin: 20px auto;
+    font-size: 20px;
+    text-align: center;
+}
+
+#index .container .presentation a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 20px;
+    padding: 15px;
+    background-color: rgb(220, 220 ,220);
+    border-radius: 1em;
+    box-shadow: 0 0 15px rgb(153, 51, 204);
+    font-weight: bold;
+    color: rgb(153, 51, 204);
+    transition: 0.4s;
+}
+
+#index .container .presentation a:hover{
+    box-shadow: 0 0 20px rgb(0, 204, 0);
+    color: rgb(0, 204, 0);
+}
+
+#icon-navi {
+    color: rgb(153, 51, 204);
+    display: none;
 }
