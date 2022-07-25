@@ -63,10 +63,15 @@ html {
     display: inline-block;
     margin-left: 10px;
     transition: 0.4s;
+    font-size: 25px;
 }
 
 #index .container header .container-header .icon-social a:hover{
     color: rgb(0, 204, 0);
+}
+
+#index .container header .container-header .selected{
+    color:rgb(0, 204, 0);
 }
 
 #index .container .presentation{
@@ -286,4 +291,99 @@ html {
 #portfolio .container .row .proyect a:hover{
     box-shadow: 0 0 20px rgb(0, 204, 0);
     color: rgb(0, 204, 0);
+}
+
+footer{
+    background-color: rgb(153, 51, 204);
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 5px;
+    font-size: 30px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 800px){
+    .icon-social{
+        display: none;
+    }
+
+    nav{
+        display: none;
+    }
+
+    nav.responsive{
+        display: block;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    nav.responsive ul{
+        display: block;
+        text-align: center;
+    }
+
+    nav.responsive ul li{
+        margin: 5px 0;
+    }
+
+    #icon-navi{
+        display: block;
+        transition: 0.3s;
+    }
+    #icon-navi:hover{
+        color:rgb(0, 204, 0);
+        cursor: pointer;
+    }
+
+    #index .container .presentation h2{
+        font-size: 40px;
+    }
+
+    #about{
+        padding: 50px 0;
+        display: block;
+    }
+
+    #about .container-picture{
+        max-width: 200px;
+        margin: auto;
+    }
+
+    #about .container-picture img{
+        padding: 10px;
+    }
+
+    #about .about .section-tittle{
+        text-align: center;
+    }
+
+    #about .about h2{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #portfolio{
+        padding: 50px 0;
+    }
+
+    #portfolio .row{
+        display: block;
+    }
+
+    #portfolio .row .proyect{
+        margin: 10px auto;
+    }
+
 }
