@@ -153,6 +153,7 @@ html {
 
 #about .about .section-tittle{
     font-size: 30px;
+    font-weight: bold;
     letter-spacing: 20px;
     text-decoration: underline;
     text-decoration-color: rgba(0, 204, 0,0.5);
@@ -203,3 +204,75 @@ html {
 }
 
 /* Section portfolio */
+
+#portfolio{
+    background-color: rgba(0, 204, 0, 0.1);
+}
+
+#portfolio .container{
+    max-width: 1024px;
+    padding: 100px 0;
+    margin: auto;
+}
+
+#portfolio .container .section-tittle{
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 20px;
+    text-decoration: underline;
+    text-decoration-color: rgba(0, 204, 0,0.5);
+    text-decoration-thickness: 10px;
+}
+
+#portfolio .container .row{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+#portfolio .container .row .proyect{
+    max-width: 512px;
+    border: 5px solid rgb(153, 51, 204);
+    border-radius: 1em;
+    margin: 0 10px;
+    padding: 5px 10px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+#portfolio .container .row .proyect .info{
+    position: absolute;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: 0.4s;
+}
+
+#portfolio .container .row .proyect iframe{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+#portfolio .container .row .proyect:hover {
+    box-shadow: 0 0 10px rgb(0, 204, 0);
+    border: 5px solid rgb(0, 204, 0);
+}
+
+#portfolio .container .row .proyect:hover iframe{
+    filter: none;
+}
+
+#portfolio .container .row .proyect:hover .info{
+    opacity: 1;
+    bottom: 0;
+}
+
+
