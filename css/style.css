@@ -262,6 +262,7 @@ html {
 }
 
 #portfolio .container .row .proyect iframe{
+    max-width: 100%;
     filter: grayscale(1);
     transition: 0.4s;
 }
@@ -306,6 +307,10 @@ footer a{
     display: inline-block;
     margin: 5px;
     font-size: 30px;
+}
+
+img{
+    max-width: 100%;
 }
 
 /* Responsive */
@@ -378,11 +383,11 @@ footer a{
         padding: 50px 0;
     }
 
-    #portfolio .row{
+    #portfolio .container .row{
         display: block;
     }
 
-    #portfolio .row .proyect{
+    #portfolio .container .row .proyect{
         margin: 10px auto;
     }
 
